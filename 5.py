@@ -1,7 +1,7 @@
 '''5. Find the sum of the series upto n terms
 2 + 22 + 222 + 2222 + 22222 + ......
 example:2 + 22 + 222 + 2222 + 22222 = 24690'''
-#moderate
+#moderate - good logic building
 
 def terms(n):
     sum=0

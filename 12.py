@@ -1,8 +1,12 @@
 '''12. Write a Python program to convert a list of characters into a string.'''
 
-list=["a","p","p","l","e"]
+list=["a","p","p","l","e"," ","b"]
 
-string=list[0] + list[1] + list[2] + list[3] + list[4]
+string=""
+n=0
+while (n<=(len(list)-1)):
+    string=string+list[n]
+    n=n+1
 
 print(string)
    
