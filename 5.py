@@ -13,11 +13,12 @@ def terms(n):
 
 n=int(input("Enter number of terms n : "))
 sum=0
+m=n
 
 while (1<=n):
     sum = sum + terms(n)
     n=n-1
     
-print("Sum of",n,"terms = ",sum)
+print("Sum of",m,"terms = ",sum)
     
     
