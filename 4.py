@@ -1,5 +1,5 @@
 '''4. Python program to find all armstrong numbers from 1 to 1000.'''
-#not solved - problem in logic buiding 
+#solved - good logic buiding 
 
 def num_of_digits(num):
     num_of=0
@@ -10,16 +10,20 @@ def num_of_digits(num):
     
     return num_of
     
-sum=0
-i=1
-while(i<=1000):
-    n=0
-    while(n<=num_of_digits(i)):
-        remainder = i % 10
-        sum=sum+pow(remainder,num_of_digits(i))
-        n=n+1
+    
+def armstrong(i):
+    h=i
+    armstrong = 0
+    while (i != 0) :
+        rem=i%10
+        power=pow(rem,num_of_digits(h))
+        armstrong = armstrong + power
+        i=i//10
+    
+    return armstrong    
         
-    if (i==sum): print(i)
-    i=i+1
-        
+print("Armstrong Numbers from 1 to 1000 are ")        
+for n in range(1,1001):
+    if (n==armstrong(n)):print(n,end="   ") 
 
+  
